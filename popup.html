@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+	<style type="text/css">
+		h2{
+		    margin: 0;     
+		    color: #666;
+		    padding-top: 90px;
+		    font-size: 52px;
+		    font-family: "trebuchet ms", sans-serif;    
+		}
+		.item{
+		    background: #fff;    
+		    text-align: center;
+		    height: 200px !important;
+		}
+		.carousel{
+		    margin-top: -20px;
+		    height: 150px;
+		    width: 200px;
+		}
+		.bs-example{
+			margin: 20px;
+		}
+		.carousel-indicators li{
+		   	width: 6px;
+           	height: 6px;
+           	margin: 3px;
+			background-color: black;
+			border: 1px solid #000;
+		}
+		.carousel-indicators{
+			 bottom: -40px;
+
+		}
+
+	</style>
+
+    </head>
+
+	    <body>
+
+		    <div class="panel panel-default" style="width: 547px;min-height:240px">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading" id="tittle">Panel heading</div>
+				  <div class="panel-body">
+				    <p id="desc"></p>
+				  </div>
+
+				  <!-- List group -->
+				    <ul class="list-group" id="profile">
+				      
+				    </ul>
+			</div>
+ 
+		          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 547px;height:240px">
+				  <!-- Indicators -->
+				 <!--  <ol class="carousel-indicators"></ol> -->
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner"></div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+			</div>
+          
+	  </body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name":    "Image Slide",
+    "version": "0.0",
+    "offline_enabled": true,
+
+    "icons": {
+        "16": "play.ico"
+    },
+    "background": {
+        "persistent": false,
+        "scripts": ["js/jquery.min.js"]
+    },
+
+    "content_scripts": [{
+        "matches":    ["http://*/*","https://*/*"],
+        "js":         ["js/jquery.min.js","content.js"],
+        "run_at":     "document_idle",
+        "all_frames": false
+    }],
+    "web_accessible_resources": [
+        "js/jquery.min.js",
+        "js/gmail.js",
+        "css/mystyle.css",
+        "main.js",
+	"img/alw_loader.GIF"
+        ],
+   
+    "browser_action": {
+            "default_icon": {
+                 "19": "mail_icon.png"
+            },
+            "default_title": "Image Slide",
+            "default_popup" : "popup.html"
+
+     },
+    
+    "permissions": []
+}
